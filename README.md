@@ -10,6 +10,7 @@ Usage:
  
  
 Build instructions:
+
   Install golang: https://golang.org/doc/install
   
   clone the repo
