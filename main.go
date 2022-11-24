@@ -14,7 +14,7 @@ import (
 
 func GenWallet() {
 	account := crypto.GenerateAccount()
-	if account.Address.String()[0] == os.Args[1][0] {
+	if account.Address.String()[0] == strings.ToUpper(os.Args[1])[0] {
 		if strings.HasPrefix(account.Address.String(), strings.ToUpper(os.Args[1])) {
 			fmt.Println("\n----------------------------------")
 			fmt.Println("Wallet Found!")
